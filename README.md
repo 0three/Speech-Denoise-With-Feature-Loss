@@ -2,8 +2,8 @@
 ## Introductions
 此项目为中兴众星捧月比赛中，KUNLIN所采用的去噪方法的一部分（并非全部），分享出来给各位学习使用，不当之处还望指正！  
 
-本项目使用中文人声的数据集，在Speech Denoising with Deep Feature Losses网络的基础上fine-tune，得到对中文音频有更好去噪效果的结果。
-## Guides for ZTE challenge(Sound Siganal Denoising Competetion)
+本项目使用中文人声的数据集，在Speech Denoising with Deep Feature Losses网络的基础上进行finetuning，得到针对中文音频有较好去噪效果的结果。
+## Brief Guides for ZTE challengers(Sound Siganal Denoising Competetion)
 
 1.在./data中新建四个文件夹，分别名为trainset_clean，trainset_noisy，valset_clean，valset_noisy，在./dataset中新建两个文件夹分别为valset_noisy,valset_noisy_denoised。
 
@@ -20,8 +20,10 @@
 7.运行`python senet_train.py -d /data  -o out_folder`，训练模型将会被保存在out_folder文件夹中.
 
 8.将你要去噪的音频文件放入./dataset/valset_noisy中，并运行`python senet_infer.py  -m out_folder`，去噪后的文件将保存在./dataset/valset_noisy_denoised中。（注意去噪所用音频文件需要是32bit的格式）
-## Models
-out_folder文件夹中已有使用THCHS-30数据集，学习率为1e-4，运行10个epoch微调后得到的10个网络模型，可以直接使用其中一个。
+## Results and Models
+此项目中的三个wav文件分别对应噪声，去噪，原始音频，仅供参考。
+
+out_folder文件夹中已有使用THCHS-30数据集，学习率为1e-4，运行10个epoch微调后得到的10个网络模型，可以使用其中模型用于快速使用。
 
 ## Contact us
 e-mail:852268806@qq.com / lkl6949@mail.ustc.edu.cn
