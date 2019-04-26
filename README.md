@@ -1,7 +1,7 @@
 # Speech-Denoise-With-Feature-Loss
 ## Introductions
 本项目使用中文人声的数据集，在Speech Denoising with Deep Feature Losses网络的基础上fine-tune，得到对中文音频有更好去噪效果的结果。
-## Guides
+## Guides for ZTE challenge(Sound Siganal Denoising Competetion)
 1.在./data中新建四个文件夹，分别名为trainset_clean，trainset_noisy，valset_clean，valset_noisy，在./dataset中新建两个文件夹分别为valset_noisy,valset_noisy_denoised。
 
 2.下载清华大学的中文语料库[THCHS-30](http://www.openslr.org/18/)中的数据集，或者使用自己的语料数据集。并将其中的音频部分放在./data/trainset_clean文件夹中（注意数据集音频需要wav格式）。
