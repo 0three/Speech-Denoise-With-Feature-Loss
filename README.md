@@ -26,5 +26,5 @@
 out_folder文件夹中已有使用THCHS-30数据集，学习率为1e-4，运行10个epoch微调后得到的10个网络模型，可以使用其中模型用于快速使用。
 
 ## Contact us
-e-mail:852268806@qq.com / lkl6949@mail.ustc.edu.cn
+e-mail:852268806 AT qq.com / lkl6949 AT mail.ustc.edu.cn
 
